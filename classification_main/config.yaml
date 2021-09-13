@@ -1,0 +1,5 @@
+host : '0.0.0.0'
+port : 8025
+graph_username : neo4j
+graph_password : 1@B3ngal1
+graph_url : bolt://15.207.175.108:7687

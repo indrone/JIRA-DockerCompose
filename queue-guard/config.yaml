@@ -1,0 +1,21 @@
+#Rabbit mq connection 
+
+# Url of remote host
+host_rabbitMQ : 0.0.0.0
+
+# Port (By default port)
+port_rabbitMQ : 5672
+
+#User name of remote host
+username : guest
+
+#Password of remote host
+password : guest
+
+# Get queue list url
+#kubernates
+#queue_list_url : http://ar-rabbitmq:15672/rabbit/api/queues
+#Without kubernates
+queue_list_url : http://0.0.0.0:15672/api/queues
+
+classification_mapping : http://0.0.0.0:8026/class_mapping

@@ -1,0 +1,69 @@
+{
+  "cash_flow_CF": {
+
+    "level_0": ["Cash flows related to operating activities","Cash flows from operating activities","Cash flow from operating activities","Net cash provided by operating activities","Net cash used in operating activities","Net cash inflow from operating activities","Net cash from operating activities","Net cash in ow / (outflow) from Operating Activities","Net cash flows generated from operating activities after exceptional items","Net Cash generated from Operating Activities","net cash inflows/(outflows) from operating operating activities"],
+
+    "level_1": ["Cash flows related to investing activities","Cash flows from investing activities","Cash flow from investing activities","Net cash provided by/(used in) investing activities","Net cash used in investing activities","Net cash (outflow) from investing activities","Net cash inflow / (outflow) from Investing Activities","Net cash (used in) investing activities","Net Cash (used) in Investing Activities"],
+
+    "level_2": ["Cash flows related to financing activities","Cash flows from financing activities","Cash flow from financing activities","Net cash used in financing activities","Net cash from financing activities","Net cash in ow / (outflow) from Financing Activities","Net cash (used in) financing activities"],
+
+    "level_3": ["Cash and cash equivalents at the end of the financial year","Cash and cash equivalents at end of the year","Cash and cash equivalents at end of year","Cash and cash equivalents 31 December","Closing net cash and cash equivalents","Balances as per statement of Cash Flows","Cash and Cash Equivalents (Closing Balance)","Cash and Cash equivalents as at 31.03."],
+
+     "calculated_field_cf":["Net cash provided by operating activities","Net cash used in investing activities",
+                          "Net cash used in financing activities","Net increase/(decrease) in cash and cash equivalents","Cash and cash equivalents at the end of the financial year",
+                          "Total cash received","Total cash used","Net cash from / (used by) operating activities","Net cash from / (used by) investing activities",
+                          "Net cash from financing activities","Net decrease in cash held","Cash and cash equivalents at the end of the reporting period",
+                          "Net cash inflow from operating activities","Net cash outflow from investing activities","Net cash outflow from financing activities",
+                          "Net (decrease)/increase in cash and cash equivalents","Cash generated from operating activities","Net cash (used in)/generated from operating activities",
+                          "Net cash (used in)/generated from investing activities","Net cash (used in)/generated from financing activities",
+                          "Closing cash and cash equivalents at reporting date","Net Operating Cash Flows Per Share","Net cash from operating activities",
+                          "Net cash used in investing activities","Net Operating Cash Flow Per Share","Operating profit before working capital changes",
+                          "Change in Working Capital","Changes in non current assets and liabilities","Cash Generated From Operations",
+                          "Net cash flow from operating activities","Net cash flow used in Investing Activities","Net change in cash & cash equivalents",
+                          "cash generated from operations before exceptional items","cash flow before exceptional items","sub-total","Cash and cash equivalents at the end of the year","Balances as per statement of Cash Flows"]
+  },
+  
+  "balance_sheet_BS":{
+
+  "class_corpus" :["asset", "equity", "liabilities"],
+
+  "current_assets_corpus" :["tds","t d s","gst receivable","cash and cash equivalent","cash and bank balance","cash and liquid assets","trade receivable","inventories","inventory","current assets loans & advances","current assets loans","sundry debtors","debtors","loans & advances","loans & advances ( assets)","advances & deposits"],
+
+  "non_current_assets_corpus" :["property plant and equipment","properties plant & equipment","work-in-progress","wip","intangible assets","fixed assets","fixed","investments","investment","gross block","opening wdv","opening written down value","fixture", "deferred tax assets"],
+
+  # less current liabilities = Temporary fix
+  "current_liabilities_corpus":["payables","trade payables","trade creditors","account payables","accounts payable and accrued liabilities","trade payable","trade and payable","account payable","payables due to financial institutions","short term provisions","current liabilities & provisions","current liabilities and provisions","current liabilities & provisions","cgst payable","sundry creditors","sundry creditors and current liabilities","less current liabilities"],
+
+  "non_current_liabilities_corpus": ["deferred tax","secured","unsecured","long term provision","long term","long term borrowings","loans liability","loan liabilities","loans","loan","borrowing","borrowings","loan fund","financial services","financial","equipment", "cash credit"],
+
+  "equity_corpus":["share holder fund","shareholders' funds","shareholders' equity","equity capital","issued capital","share capital","stockholder's equity","non-controlling interest", "minority interest","capital","capital account","capitalaccount","partner's capital","partners' capital","proprietor's capital","corpus fund","reserve and surplus","partners capital account","capital and reserves","General Fund","Corpus Fund","contributed equity"],
+
+  "bank_corpus":["sbi","nabard","dcb","ivb","psb","svc","idbi","hdfc","icici","pnb","boi","ubi","bmb","uob","bob","bom","iob","uco","cbi","obc","bur","cub","csb","kvb","lvb","sib","tmb","exim","iibi","sidbi","nhb","tscab","tgb","apgub","boa","ae","hsbc","dbs","adb","rbs","boc","acb","bbk","db","scb","electronica finance"],
+
+
+  "calculated_field_bs":["Total current assets","Total non-current assets","Total assets","Total current liabilities","Total non-current liabilities",
+                          "Total liabilities","Net assets","Total equity","Total equity attributable to owners","Total financial assets",
+                          "Total non-financial assets","Total payables","Total provisions","Total equity and liabilities","Total shareholders' equity",
+                          "Net Current Assets","Net non current asset","Equity attributable to shareholders of the Company"]
+
+
+
+  },
+  "residual_lineitems":{
+
+          "Revenue":"Revenue - Other",
+          "Cost of goods sold / Cost of Sales":"COGS - Other",
+          "Operating expenses":"Other",
+          "Non-operating or Other Income / Expenses":"Other Non Operating Expenses",
+          "Other Comprehensive Income":"Other",
+          "Current Assets":"Other Current Assets",
+          "Non-current Assets":"Other Non-Current Assets",
+          "Current Liabilities":"Other Current Liabilities",
+          "Non-Current Liabilities":"Other Non Current Liabilities",
+          "Equity":"Other Equity and Reserves",
+          "Operating Activities":"Change in Other Net Operating Assets/Liabilities",
+          "Investing Activities":"Other Investing Activities",
+          "Financing Activities":"Other Financing Activities"
+
+      }
+}

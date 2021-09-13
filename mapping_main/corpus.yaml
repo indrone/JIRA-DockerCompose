@@ -1,0 +1,23 @@
+{
+  "income_statement_IS": {
+    
+
+    
+  },
+  "cash_flow_CF": {
+
+    
+  },
+  
+  
+ "balance_sheet_BS":{
+
+  "net_fixed_asset" : ["closing wdv", "closing written down value", "net block", "net fixed asset","net property plant and equipment"],
+
+  "gross_fixed_assset" : ["gross fixed assset", "gross block", "opening wdv", "opening written down value", "gross property plant and equipment"],
+
+  "secured_loans_domain" : ["loan", "finance", "bank", "machineries", "assets"]
+
+  }
+
+  }

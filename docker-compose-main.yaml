@@ -1,0 +1,49 @@
+version: '3'  # version of compose format 
+
+services:
+  queue-guard:
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: always
+    container_name: classification_queue
+    build: ./queue-guard  # path is relative to docker-compose.yml localtion
+    image: classification_queue
+    volumes:
+      - /var/log/classification/config.yaml:/classification_queue/config.yaml
+    #network_mode: "host"
+
+
+  mapping_main:
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: always
+    container_name: mapping_main
+    build: ./mapping_main  # path is relative to docker-compose.yml localtion
+    image: mapping_main
+    volumes:
+      - /var/log/classification/config.yaml:/mapping_main/config.yaml
+      - /var/log/classification/mapping_output/logs:/mapping_main/logs # mount volume
+      - /var/log/extraction/Final_Output:/mapping_main/mapping_output/Final_Output
+    expose:
+       - 8026
+    ports:
+      - 8026:8026  # host:container
+    depends_on:
+      - queue-guard          # api-main is not going to work unless queue-guard is running
+
+  classification_main:
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: always
+    container_name: classification_main
+    build: ./classification_main  # path is relative to docker-compose.yml localtion
+    image: classification_main
+    volumes:
+      - /var/log/classification/config.yaml:/classification_main/config.yaml
+      - /var/log/classification/classification_output/logs:/classification_main/logs # mount volume
+      - /var/log/extraction/Final_Output:/classification_main/classification_output/Final_Output
+    expose:
+       - 8025
+    ports:
+      - 8025:8025  # host:container
+

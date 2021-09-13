@@ -1,0 +1,8 @@
+host : '0.0.0.0'
+port : 8026
+
+classification_url : http://0.0.0.0:8025/class_mapping
+
+socket : "tcp://0.0.0.0:1234"
+
+

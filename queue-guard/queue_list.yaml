@@ -1,0 +1,19 @@
+# Que list of every service
+
+input_queue : fst.extraction.request
+
+output_queue : fst.extraction.response
+
+fin_page_identification : Fin_Page_Identification
+
+table_extraction_annual : annual_page_extraction 
+
+classification_mapping : Classification_mapping
+
+UI_table_extraction : annual_page_extraction_UI
+
+tally_extraction : Tally_Extraction
+
+route_key_input: fst.extraction.request
+ 
+route_key_output: fst.extraction.response
