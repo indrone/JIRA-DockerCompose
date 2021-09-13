@@ -4,6 +4,13 @@ pipeline {
     stage("build") {
       steps {
         sh """
+          pwd
+        """
+      }
+    }
+    stage("run") {
+      steps {
+        sh """
           docker-compose up
         """
       }
